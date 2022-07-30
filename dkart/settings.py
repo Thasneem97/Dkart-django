@@ -132,3 +132,16 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
+
+
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+
+#smtp configuration
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'df302e689dac12'
+EMAIL_HOST_PASSWORD = 'dc1f1e9c847dea'
+EMAIL_PORT = '2525'
